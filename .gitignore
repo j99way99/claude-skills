@@ -1,0 +1,9 @@
+.DS_Store
+.idea/
+.vscode/
+
+# 로컬 전용 — 커밋하지 않는다
+.claude/settings.local.json
+*.local.json
+.env
+.env.*

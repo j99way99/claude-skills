@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "way-skills",
+  "description": "wayjeong 개인 공통 Claude Code Skills marketplace",
+  "owner": { "name": "wayjeong" },
+  "plugins": [
+    {
+      "name": "claude-skills",
+      "source": "./",
+      "description": "여러 개인 프로젝트에서 재사용하는 backend 개발 방법론 Skills",
+      "category": "development"
+    }
+  ]
+}
