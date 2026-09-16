@@ -44,6 +44,25 @@ claude plugin details claude-skills
 > `permissions.additionalDirectories` 와 `--add-dir` 는 **도구 접근 허용 디렉터리**일 뿐
 > Skill 로딩 경로가 아니다. 공통 Skill 공유에 사용하지 않는다.
 
+## Skill 을 고친 뒤
+
+설치된 plugin 은 `~/.claude/plugins/cache/way-skills/claude-skills/<version>/` 에 **복사본**으로
+고정된다(설치 시점의 commit sha 로 pin). repo 를 고쳐도 자동 반영되지 않는다.
+
+1. `skills/**` 수정
+2. `.claude-plugin/plugin.json` 의 `version` 을 올린다
+3. 커밋
+4. 반영:
+
+```bash
+claude plugin marketplace update way-skills
+claude plugin update claude-skills
+```
+
+5. Claude Code 세션을 재시작한다 (plugin 변경은 다음 세션부터 적용된다)
+
+검증: `claude plugin details claude-skills` 의 Skills 목록과 버전 확인.
+
 ## Skill 역할 경계
 
 | Skill | 언제 |
