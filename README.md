@@ -16,7 +16,8 @@ claude-skills/
     ├── database-analysis/SKILL.md
     ├── debugging/SKILL.md
     ├── api-design/SKILL.md
-    └── devlog/SKILL.md
+    ├── devlog/SKILL.md
+    └── loop-engineering/SKILL.md
 ```
 
 ## 설치 (Claude Code 2.1.x)
@@ -74,8 +75,11 @@ claude plugin update claude-skills@way-skills
 | `debugging` | 이미 **터진 것**의 원인 추적 |
 | `api-design` | HTTP 계약 설계와 호환성 판단 |
 | `devlog` | 작업을 블로그 글로 남기고 waysblog 에 브랜치로 push |
+| `loop-engineering` | 돌아가는 프로젝트를 한 번에 한 덩어리씩 개선하는 루프 |
 
 축이 겹치지 않도록 **작성 / 검토 / 진단 / 설계**로 나눈다.
+`loop-engineering` 은 이들과 다른 축이다 — 무엇을 할지 고르고 한 덩어리로 끝내는 **진행 절차**이고,
+그 안에서 위 Skill 들을 불러 쓴다.
 언어·프레임워크별 항목은 별도 Skill 로 쪼개지 않고 `references/` 로 내린다.
 
 AWS 아키텍처 리뷰는 이 repo 에 두지 않는다. `aws-dev-toolkit` plugin 이
