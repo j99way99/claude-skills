@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "way-skills",
-  "description": "wayjeong 개인 공통 Claude Code Skills marketplace",
-  "owner": { "name": "wayjeong" },
+  "description": "j99way99 개인 공통 Claude Code Skills marketplace",
+  "owner": { "name": "j99way99" },
   "plugins": [
     {
       "name": "claude-skills",
