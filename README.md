@@ -15,7 +15,8 @@ claude-skills/
     ├── code-review/SKILL.md + references/spring.md
     ├── database-analysis/SKILL.md
     ├── debugging/SKILL.md
-    └── api-design/SKILL.md
+    ├── api-design/SKILL.md
+    └── devlog/SKILL.md
 ```
 
 ## 설치 (Claude Code 2.1.x)
@@ -72,6 +73,7 @@ claude plugin update claude-skills@way-skills
 | `database-analysis` | 스키마·쿼리·인덱스·마이그레이션 |
 | `debugging` | 이미 **터진 것**의 원인 추적 |
 | `api-design` | HTTP 계약 설계와 호환성 판단 |
+| `devlog` | 작업을 블로그 글로 남기고 waysblog 에 브랜치로 push |
 
 축이 겹치지 않도록 **작성 / 검토 / 진단 / 설계**로 나눈다.
 언어·프레임워크별 항목은 별도 Skill 로 쪼개지 않고 `references/` 로 내린다.
