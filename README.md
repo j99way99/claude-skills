@@ -56,7 +56,7 @@ claude plugin details claude-skills
 
 ```bash
 claude plugin marketplace update way-skills
-claude plugin update claude-skills
+claude plugin update claude-skills@way-skills
 ```
 
 5. Claude Code 세션을 재시작한다 (plugin 변경은 다음 세션부터 적용된다)
