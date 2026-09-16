@@ -31,7 +31,7 @@ user scope 이므로 **모든 프로젝트에서 자동으로 로드된다.** �
 원격에 올린 뒤에는 경로 대신 GitHub repo 를 넘길 수 있다:
 
 ```bash
-claude plugin marketplace add wayjeong/claude-skills
+claude plugin marketplace add j99way99/claude-skills
 ```
 
 갱신·확인:
