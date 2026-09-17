@@ -2,7 +2,7 @@
 name: devlog
 description: >
   방금 한 작업에서 남길 만한 것을 골라 블로그 글 초안으로 만들고, 확인을 받은 뒤
-  waysblog 저장소에 브랜치로 push 한다. 어느 저장소에서 작업하든 쓸 수 있다.
+  waysblog 저장소에 브랜치로 push 하고 PR 을 연다 (머지는 하지 않는다). 어느 저장소에서 작업하든 쓸 수 있다.
   "이거 글로 남겨줘", "devlog 써줘", "이번 작업 블로그에 정리해줘", "지금까지 한 거 회고 글로"
   같은 요청에 트리거된다. 인자로 주제를 좁힐 수 있다 (예: `/devlog 트랜잭션 경계`).
   코드 자체를 문서화하는 것(README, 주석, 저장소 문서)은 여기에 해당하지 않는다.
@@ -70,7 +70,12 @@ description: >
    `_site/posts/` 에 글이 생겼는지 확인한다.
 2. `post-<slug>` 브랜치, `_posts/*.md` **한 파일만** 스테이징, 커밋,
    `-u` 로 push. 커밋 메시지 끝에 `Co-Authored-By: Claude <noreply@anthropic.com>`.
-3. git 이 출력한 PR 링크를 보고한다. **merge 하지 않고 `main` 에 push 하지 않는다.**
+3. **PR 을 연다.** `gh pr create --base main --head post-<slug>`
+   - 제목: `Add post: <글 제목>`
+   - 본문: 글 파일 경로, 한 줄 요약, `Jekyll build passed locally.`
+   - 이미 같은 브랜치의 PR 이 열려 있으면 새로 만들지 않고 그 PR 을 쓴다.
+4. 만들어진 PR 링크를 보고한다. **머지하지 않고 `main` 에 push 하지 않는다.**
+   머지는 사용자가 따로 요청할 때만 한다 (머지하면 GitHub Pages 가 다시 빌드되어 글이 공개된다).
 
 ## 토큰 절약
 
