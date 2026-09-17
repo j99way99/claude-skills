@@ -17,7 +17,8 @@ claude-skills/
     ├── debugging/SKILL.md
     ├── api-design/SKILL.md
     ├── devlog/SKILL.md
-    └── loop-engineering/SKILL.md
+    ├── loop-engineering/SKILL.md
+    └── mermaid-diagram/SKILL.md + scripts/render_check.py
 ```
 
 ## 설치 (Claude Code 2.1.x)
@@ -76,6 +77,7 @@ claude plugin update claude-skills@way-skills
 | `api-design` | HTTP 계약 설계와 호환성 판단 |
 | `devlog` | 작업을 블로그 글로 남기고 waysblog 에 브랜치로 push |
 | `loop-engineering` | 돌아가는 프로젝트를 한 번에 한 덩어리씩 개선하는 루프 |
+| `mermaid-diagram` | 구성·흐름·상태·ER 을 Mermaid 로 그리고 렌더링까지 검증 |
 
 축이 겹치지 않도록 **작성 / 검토 / 진단 / 설계**로 나눈다.
 `loop-engineering` 은 이들과 다른 축이다 — 무엇을 할지 고르고 한 덩어리로 끝내는 **진행 절차**이고,
